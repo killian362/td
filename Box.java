@@ -1,7 +1,22 @@
 import java.util.ArrayList;
-class Box{
-ArrayList<String> contents = new ArrayList<String>();
-public void add(String truc) {
-this.contents.add(truc);
+
+class Thing {
+    String name;
+
+    public Thing(String name) {
+        this.name = name;
+    }
 }
+
+class Box {
+    ArrayList<Thing> contents;
+
+    public Box() {
+        contents = new ArrayList<Thing>();
+    }
+
+    public void add(String truc) {
+        Thing newThing = new Thing(truc);
+        this.contents.add(newThing);
+    }
 }
