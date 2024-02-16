@@ -17,10 +17,9 @@ public class TestsBoxes {
     @Test
     public void testUser() {
         User soi = new User(456, "Larue", "Lavrai");
-        Box b = new Box();
-        soi.ajoute(b);
-        b.add("machin");
-        b.add("lope");
+        soi.ajoute("machin");
+        soi.ajoute("lope");
+
         
     }
 }
